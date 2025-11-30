@@ -46,9 +46,10 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>1</WarningLevel>
+    <WarningLevel>2</WarningLevel>
     <PlatformTarget>x64</PlatformTarget>
     <RunSqlCodeAnalysis>False</RunSqlCodeAnalysis>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
@@ -60,10 +61,5 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="base.sql" />
-    <Build Include="triggers.sql" />
-    <Build Include="util.sql" />
   </ItemGroup>
 </Project>

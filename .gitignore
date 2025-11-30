@@ -53,3 +53,7 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /Database2/.vs
+/.vs
+/RUoW/__pycache__
+/Database2/Database2.dbmdl
+/Database2/Database2.jfm
